@@ -1,0 +1,134 @@
+/* _content/AppliedTax/Shared/MainLayout.razor.rz.scp.css */
+.page[b-r497hmv6xm] {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+main[b-r497hmv6xm] {
+    flex: 1;
+}
+
+.sidebar[b-r497hmv6xm] {
+    background-image: linear-gradient(180deg, rgb(5, 39, 103) 0%, #3a0647 70%);
+}
+
+.top-row[b-r497hmv6xm] {
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #d6d5d5;
+    justify-content: flex-end;
+    height: 3.5rem;
+    display: flex;
+    align-items: center;
+}
+
+    .top-row[b-r497hmv6xm]  a, .top-row .btn-link[b-r497hmv6xm] {
+        white-space: nowrap;
+        margin-left: 1.5rem;
+    }
+
+    .top-row a:first-child[b-r497hmv6xm] {
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+@media (max-width: 640.98px) {
+    .top-row:not(.auth)[b-r497hmv6xm] {
+        display: none;
+    }
+
+    .top-row.auth[b-r497hmv6xm] {
+        justify-content: space-between;
+    }
+
+    .top-row a[b-r497hmv6xm], .top-row .btn-link[b-r497hmv6xm] {
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 641px) {
+    .page[b-r497hmv6xm] {
+        flex-direction: row;
+    }
+
+    .sidebar[b-r497hmv6xm] {
+        width: 250px;
+        height: 100vh;
+        position: sticky;
+        top: 0;
+    }
+
+    .top-row[b-r497hmv6xm] {
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    .top-row[b-r497hmv6xm], article[b-r497hmv6xm] {
+        padding-left: 2rem !important;
+        padding-right: 1.5rem !important;
+    }
+}
+/* _content/AppliedTax/Shared/NavMenu.razor.rz.scp.css */
+.navbar-toggler[b-tpbqdg35ho] {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.top-row[b-tpbqdg35ho] {
+    height: 3.5rem;
+    background-color: rgba(0,0,0,0.4);
+}
+
+.navbar-brand[b-tpbqdg35ho] {
+    font-size: 1.1rem;
+}
+
+.oi[b-tpbqdg35ho] {
+    width: 2rem;
+    font-size: 1.1rem;
+    vertical-align: text-top;
+    top: -2px;
+}
+
+.nav-item[b-tpbqdg35ho] {
+    font-size: 0.9rem;
+    padding-bottom: 0.5rem;
+}
+
+    .nav-item:first-of-type[b-tpbqdg35ho] {
+        padding-top: 1rem;
+    }
+
+    .nav-item:last-of-type[b-tpbqdg35ho] {
+        padding-bottom: 1rem;
+    }
+
+    .nav-item[b-tpbqdg35ho]  a {
+        color: #d7d7d7;
+        border-radius: 4px;
+        height: 3rem;
+        display: flex;
+        align-items: center;
+        line-height: 3rem;
+    }
+
+.nav-item[b-tpbqdg35ho]  a.active {
+    background-color: rgba(255,255,255,0.25);
+    color: white;
+}
+
+.nav-item[b-tpbqdg35ho]  a:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: white;
+}
+
+@media (min-width: 641px) {
+    .navbar-toggler[b-tpbqdg35ho] {
+        display: none;
+    }
+
+    .collapse[b-tpbqdg35ho] {
+        /* Never collapse the sidebar for wide screens */
+        display: block;
+    }
+}
